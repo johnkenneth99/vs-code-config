@@ -1,0 +1,105 @@
+  {
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
+  // Vim settings
+  "vim.leader": "<Space>",
+  "vim.useSystemClipboard": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-e>": false,
+    "<C-w>": false,
+    "<C-c>": false,
+    "<C-r>": false
+  },
+  "vim.insertModeKeyBindings": [
+  {
+    "before": ["t", "n"],
+    "after": ["<Esc>"]
+  },
+  {
+    "before": ["leader","r"],  
+    "commands": ["workbench.action.openRecent"],
+  },
+],
+"vim.normalModeKeyBindings": [
+  {
+    "before": ["leader", "v"],
+    "commands": ["workbench.action.splitEditor"]
+  },
+  {
+    "before": ["leader", "s"],
+    "commands": ["workbench.action.splitEditorDown"]
+  },
+  {
+    "before": ["leader", "l"],
+    "commands": ["workbench.action.focusRightGroup"]
+  },
+  {
+    "before": ["leader", "h"],
+    "commands": ["workbench.action.focusLeftGroup"]
+  },
+  {
+    "before": ["leader", "k"],
+    "commands": ["workbench.action.focusAboveGroup"]
+  },
+  {
+    "before": ["leader", "j"],
+    "commands": ["workbench.action.focusBelowGroup"]
+  },
+  {
+    "before": ["leader", "e"],  
+    "commands": ["workbench.view.explorer"],
+  },
+  {
+    "before": ["leader", "p"],  
+    "commands": ["workbench.action.showCommands"],
+  }
+],
+  "vim.visualModeKeyBindings": [
+  {
+    "before": ["leader", "c"],
+    "commands": ["editor.action.commentLine"]
+  }    
+  ],
+
+  // Performance BOOST ~
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+"editor.quickSuggestions": {
+  "other": "off",
+  "comments": "off",
+  "strings": "off"
+},
+  "[javascriptreact][javascript][typescript][typescriptreact][prisma]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[rust]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "jinxdash.prettier-rust"
+  },
+  "editor.renderWhitespace": "all",
+  "terminal.integrated.env.windows": {},
+  "console-ninja.featureSet": "Community",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.tabCompletion": "onlySnippets",
+  "editor.snippetSuggestions": "top",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "prettier.printWidth": 150,
+  "window.titleBarStyle": "custom",
+  "window.customMenuBarAltFocus": false,
+  "window.enableMenuBarMnemonics": false,
+  // "workbench.colorTheme": "Dracula",
+  "workbench.sideBar.location": "right",
+  "explorer.openEditors.visible": 1,
+  "git.openRepositoryInParentFolders": "never",
+  "caps-lock-state.choose_display_method": "method_cursor_text",
+  "prettier.tabWidth": 4,
+  "editor.inlineSuggest.enabled": false,
+  "workbench.activityBar.location": "hidden"
+}
